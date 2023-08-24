@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_build:
+	set -ex && \
+		export GIT_COMMIT="f633919178f6c8ee4fb41b848a056ec33f8d707d" && \
+		export GIT_BRANCH="main" && \
+		export GIT_BRANCH_CLEAN="main" && \
+		make bin/conmon
+
+override_dh_auto_install:
+	make DESTDIR=debian/tmp PREFIX=/usr install.bin
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+	make clean
+
+%:
+	dh $@
