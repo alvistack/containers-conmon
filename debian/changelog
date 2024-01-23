@@ -1,0 +1,5 @@
+conmon (100:2.1.11-1) UNRELEASED; urgency=medium
+
+  * https://github.com/containers/conmon/releases/tag/v2.1.11
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Tue, 30 Apr 2024 18:49:59 +0800
