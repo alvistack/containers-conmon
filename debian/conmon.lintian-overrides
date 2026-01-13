@@ -1,0 +1,4 @@
+conmon: copyright-without-copyright-notice
+conmon: initial-upload-closes-no-bugs
+conmon: no-manual-page
+conmon: zero-byte-file-in-doc-directory
